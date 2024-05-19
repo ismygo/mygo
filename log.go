@@ -105,7 +105,7 @@ func (l *Logger) Trace(v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("T ")
+	l.logger.SetPrefix("[Trace] ")
 	l.logger.Output(2, fmt.Sprintln(v...))
 }
 
@@ -115,7 +115,7 @@ func (l *Logger) Tracef(format string, v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("T ")
+	l.logger.SetPrefix("[Trace] ")
 	l.logger.Output(2, fmt.Sprintf(format, v...))
 }
 
@@ -125,7 +125,7 @@ func (l *Logger) Debug(v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("D ")
+	l.logger.SetPrefix("[Debug] ")
 	l.logger.Output(2, fmt.Sprintln(v...))
 }
 
@@ -135,7 +135,7 @@ func (l *Logger) Debugf(format string, v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("D ")
+	l.logger.SetPrefix("[Debug] ")
 	l.logger.Output(2, fmt.Sprintf(format, v...))
 }
 
@@ -145,7 +145,7 @@ func (l *Logger) Info(v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("I ")
+	l.logger.SetPrefix("[Info] ")
 	l.logger.Output(2, fmt.Sprintln(v...))
 }
 
@@ -155,7 +155,7 @@ func (l *Logger) Infof(format string, v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("I ")
+	l.logger.SetPrefix("[Info] ")
 	l.logger.Output(2, fmt.Sprintf(format, v...))
 }
 
@@ -165,7 +165,7 @@ func (l *Logger) Warn(v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("W ")
+	l.logger.SetPrefix("[Warn] ")
 	l.logger.Output(2, fmt.Sprintln(v...))
 }
 
@@ -175,7 +175,7 @@ func (l *Logger) Warnf(format string, v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("W ")
+	l.logger.SetPrefix("[Warn] ")
 	l.logger.Output(2, fmt.Sprintf(format, v...))
 }
 
@@ -185,7 +185,7 @@ func (l *Logger) Error(v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("E ")
+	l.logger.SetPrefix("[Error] ")
 	l.logger.Output(2, fmt.Sprintln(v...))
 }
 
@@ -195,7 +195,7 @@ func (l *Logger) Errorf(format string, v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("E ")
+	l.logger.SetPrefix("[Error] ")
 	l.logger.Output(2, fmt.Sprintf(format, v...))
 }
 
@@ -205,7 +205,7 @@ func (l *Logger) Fatal(v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("F ")
+	l.logger.SetPrefix("[Fatal] ")
 	l.logger.Output(2, fmt.Sprintln(v...))
 	os.Exit(1)
 }
@@ -216,7 +216,7 @@ func (l *Logger) Fatalf(format string, v ...interface{}) {
 		return
 	}
 
-	l.logger.SetPrefix("F ")
+	l.logger.SetPrefix("[Fatal] ")
 	l.logger.Output(2, fmt.Sprintf(format, v...))
 	os.Exit(1)
 }

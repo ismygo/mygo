@@ -2,6 +2,10 @@
 
 A list of Golang utils.
 
+## Required
+
+- Golang >= 1.20
+
 
 ## Function
 
